@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/Open_Sans/OpenSans-Bold.ttf') ;
+}
+
+.screen-container {
+    background: #9C835F;
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Open Sans Bold";
+    letter-spacing: 0.1rem;
+}
+
+.back {
+    color:#F9B23D;
+    text-decoration: none;
+    max-width: 500px;
+}
+
+.back:hover {
+    color: #ff9f06;
+}
+
+.btn-style {
+    background: none;
+    border: none;
+    border-radius: 13px !important;
+}
+
+.btn-style:hover {
+    background: #C4C4C4;
+}
+
+.btn-style-player {
+    background: #C4C4C4 !important;
+    border: none;
+    border-radius: 13px !important;
+}
+
+.btn-comp {
+    background: none;
+    border: none;
+}
+
+.btn-style-comp {
+    background: #C4C4C4 !important;
+    background: none;
+    border: none;
+    border-radius: 13px !important;
+}
+
+.h1-vs {
+    font-size: 6rem;
+    color:#BD0000;
+}
+
+.h1-hasil {
+    position: absolute;
+    background: #4C9654;
+    z-index: 10;
+    width: 230px;
+    transform: rotate(-15deg);
+    color: white;
+    padding: 20px 0;
+    min-height: 80px;
+    text-align: center;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    margin: 100px 0;
+}
+
+.h1-hasil-draw {
+    background: #035B0C !important;
+    padding: 35px;
+    width: 200px !important;
+}
+
+.refresh {
+    bottom: 40px;
+}
+
+.refresh:hover {
+    transform: rotate(-30deg) !important;
+    background-color: transparent !important;
+}
+
+.rotate:hover {
+    transform: rotate(-20deg);
+}
+
+@media only screen and (max-width: 768px) {
+    .refresh {
+        bottom: 0;
+    }
+}

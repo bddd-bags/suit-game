@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 04 | Suit</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style-suit.css">
+</head>
+
+<body>
+    <main class="screen-container">
+        <div class="container-fluid" style="min-height: 100vh;">
+            <header class="py-3">
+                <a class="d-flex back" href="index.html">
+                    <div class="ms-2 my-auto">
+                        <img src="assets/back.svg" alt="" style="width: 25px;">
+                    </div>
+                    <div class="mx-4">
+                        <img src="assets/logo-back.png" alt="" style="width: 50px;">
+                    </div>
+                    <div class="my-auto">
+                        <h4 class="text-uppercase d-none d-sm-block">rock paper scissors</h4>
+                    </div>
+                </a>
+            </header>
+            <section class="section container d-grid">
+                <div class="row">
+                    <!-- PLAYER -->
+                    <div class="col-md-4">
+                        <div id="player" class="d-flex flex-column align-items-md-end">
+                            <h3 class="text-center text-uppercase mb-4 mb-md-3">Player 1</h3>
+                            <button id="batu" class="p-4 me-2 btn-style" style="box-sizing: border-box;">
+                                <img class="rotate" src="assets/batu.png" alt="" style="width: 78px;">
+                            </button>
+                            <button id="kertas" class="p-4 me-2 btn-style">
+                                <img class="rotate" src="assets/kertas.png" alt="" style="width: 78px;">
+                            </button>
+                            <button id="gunting" class="p-4 me-2 btn-style">
+                                <img class="rotate" src="assets/gunting.png" alt="" style="width: 78px;">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- VS -->
+                    <div class="col-md-4 d-flex align-items-center justify-content-center" style="min-height: 40vh;">
+                        <h1 id="info" class="h1-vs text-uppercase my-5 my-sm-0 mx-auto">VS</h1>
+                    </div>
+                    <!-- COM -->
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column align-items-md-start">
+                            <h3 class="text-center text-uppercase mb-4 mb-md-3 ms-md-3 ps-2">COM</h3>
+                            <button id="batucomp" class="p-4 btn-comp">
+                                <img src="assets/batu.png" alt="" style="width: 78px;">
+                            </button>
+                            <button id="kertascomp" class="p-4 btn-comp">
+                                <img src="assets/kertas.png" alt="" style="width: 78px;">
+                            </button>
+                            <button id="guntingcomp" class="p-4 btn-comp">
+                                <img src="assets/gunting.png" alt="" style="width: 78px;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- BUTTON REFRESH -->
+                <div class="d-flex justify-content-center my-4 my-md-0">
+                    <button class="refresh p-3 btn-style position-relative" onclick="document.location.reload(true)">
+                        <img src="assets/refresh.png" alt="" style="width: 60px;">
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Location file JS -->
+    <script src="assets/js/suit.js"></script>
+</body>
+
+</html>
